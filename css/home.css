@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    background: rgb(255, 255, 255, 0, 1);
+    /*Đổ bóng cho menu*/
+    display: flex;
+    justify-content: space-between;
+    /* cách đều khoản giữa */
+    padding: 50px 50px;
+    /* trên dưới 50px trái phải  50px */
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*Nằm trên cùng*/
+    position: fixed;
+    /* box-shadow: rgb(190, 188, 188) */
+    /*Đổ bóng cho menu*/
+}
+
+header:hover {
+    background: rgb(255, 255, 255, 1);
+}
+
+.logo {
+    flex: 1;
+    padding-top: 5px;
+    background: transparent;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+}
+
+.menu li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu li:hover {
+    color: orangered;
+}
+
+.menu li:hover .sub-menu {
+    visibility: visible;
+    top: 40px;
+}
+
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #333;
+    padding: 10px 0 10px 10px;
+    /* trên 10px phải 0 dưới 10px trái 20px    */
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.sub-menu li {
+    padding: 5px 15px;
+}
+
+
+/* .sub-menu li ul li {
+    font-weight: normal;
+    font-size: 12px!important;
+} */
+
+.smallmenu .li {
+    font-weight: normal!important;
+    font-size: 12px!important;
+}
+
+.menu li a {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+
+
+/* .menu li a:hover {
+    color: orangered;
+} */
+
+.other {
+    flex: 1;
+    display: flex;
+}
+
+.other li {
+    padding: 10px 12px;
+}
+
+.other li:first-child {
+    position: relative;
+}
+
+.other li:first-child input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #333;
+    outline: none;
+}
+
+.other li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+
+
+/* slider */
+
+#slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+
+.aspect-ratio-169 {
+    top: 0;
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+/*------------------------------ app -----------------*/
+
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.app-container p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.app-google {
+    margin: 50px;
+}
+
+.app-google img {
+    height: 50px;
+}
+
+
+/* .app-container input {
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    width: 400px;
+    outline: none;
+} */
+
+
+/* ------------------------footer------------- */
+
+#foster {
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    padding-top: 37px;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+#foster .box {
+    width: 250px;
+    color: #fff;
+}
+
+#foster .box .quick-menu {
+    margin-top: 40px;
+}
+
+#foster .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#foster .box .quick-menu .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#foster .box form input {
+    width: 294px;
+    height: 42px;
+    margin-top: 30px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+}
+
+#foster .box form button {
+    background: #362f2f;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0.25);
+    margin-top: 29px;
+    height: 38px;
+    width: 163px;
+    color: #fff;
+}
+
+#foster .box form button:hover {
+    color: #000;
+}
+
+.map {
+    margin-top: 10px;
+}
