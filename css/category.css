@@ -1,5 +1,5 @@
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +32,6 @@ header {
     position: fixed;
     /* box-shadow: rgb(190, 188, 188) */
     /*Đổ bóng cho menu*/
- 
 }
 
 header:hover {
@@ -128,109 +127,12 @@ header:hover {
     position: absolute;
     right: 10px;
 }
-
-
-/* slider */
-
-#slider {
-    padding-bottom: 30px;
-    border-bottom: 2px solid #000;
-    overflow: hidden;
- 
+/* -----------categoty----------- */
+.row{
+  display :flex;
+  flex-wrap:wrap;
 }
-
-.aspect-ratio-169 {
-    top: 0;
-    display: block;
-    position: relative;
-    padding-top: 56.25%;
-    transition: 0.3s;
-}
-
-.aspect-ratio-169 img {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    justify-items: center;
-}
-
-.dot-container {
-    position: absolute;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dot {
-    width: 18px;
-    height: 18px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #333;
-}
-
-
-/*------------------------------ app -----------------*/
-
-.app-container {
-    text-align: center;
-    align-items: center;
-    padding: 150px 0 50px 0;
-}
-
-.app-container p {
-    font-size: 17px;
-    font-weight: bold;
-    color: #000;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
-.app-google {
-    margin: 50px;
-}
-
-.app-google img {
-    height: 50px;
-}
-
-
-/* .app-container input {
-    margin-top: 50px;
-    text-align: center;
-    border: none;
-    border-bottom: 1px solid #000;
-    padding-bottom: 10px;
-    width: 400px;
-    outline: none;
-} */
-
-
-/* ---------------------------body content--------------------- */
-        .row{
-            display: flex;
-        }
-        .body-conten-woment-left{
-            width: 50%;
-            background: #333;
-
-        }
-        .body-conten-ment-right{
-            background: #000;
-        }
-/* ------------------------footer------------- */
-
+/* ------------foster------- */
 #foster {
     width: 100%;
     height: 400px;
@@ -283,4 +185,130 @@ header:hover {
 
 .map {
     margin-top: 10px;
+}
+
+
+
+/* -------------------category------------- */
+.category{
+/*   padding :120px 0 0; */
+  	padding: 120px 0 0 70px;
+/*   trên phải dưới trái */
+/*   Giá trị đầu tiên là phần padding top.
+Giá trị thứ hai là phần padding right và left.
+Giá trị thứ ba là phần padding bottom. */
+}
+.category-top{
+  margin-bottom:70px;
+}
+.category-top p{
+  font-family:var(--main-text-font);
+  margin:0 10px;
+  font-size:12px;
+}
+.category-left{
+  width:20%;
+
+}
+.category-right{
+  width:80%;
+}
+.category-right-top-item:first-child{
+  font-family:var(--main-text-font);
+  font-size:16px;
+  flex:2;
+  font-weight:bold;
+}
+.category-right-top-item{
+  flex:1;
+  padding:0 15px;
+}
+.category-right-top-item button{
+  width:100%;
+  padding:10px 12px;
+  justify-content:space-between;
+  display:flex;
+  
+  background-color:#fff;
+  border:1px solid #dddddd;
+  cursor:pointer;
+  
+  
+}
+.category-right-top-item select{
+   width:100%;
+  padding:10px 12px;
+  justify-content:space-between;
+  display:flex;
+  background-color:#fff;
+  border:1px solid #dddddd;
+  cursor:pointer;
+}
+.category-right-content{
+  margin-top:20px;
+  justify-content:space-between;
+}
+.category-right-content-item{
+  width:calc(25% - 5px);
+  text-align:center;
+  padding:12px 0;
+  
+}
+.category-right-content-item img{
+  max-width:100%;
+  width : 260px;
+  height: 300px;
+ 
+}
+.category-right-content-item h2{
+  font-family:var(--main-text-font);
+  font-size:15px;
+  color:#333333;
+  margin-top:5px;
+}
+.category-right-content-item{
+    font-size: 15px;
+}
+.category-right-bottom{
+    /* flex: 2; */
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.category-right-bottom-item{
+    padding:20px 20px;
+    
+}
+.category-right-bottom p{
+    font-size: 13px;
+}
+.category-left ul li{
+    /* font-weight: bold; */
+    padding: 5px 0 ;
+}
+.category-left ul li a{
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:var(--main-text-font);
+}
+.category-left ul li ul li{
+    padding-left: 12px;
+    font-weight: normal;
+}
+.category-left-li ul{
+   display: none;
+}
+
+.category-left-li.block ul{
+    display: block;
+    font-weight: normal;
+}
+
+.category-left ul li ul li a{
+    font-size: 13px;
+    font-weight: normal
+    ;
 }

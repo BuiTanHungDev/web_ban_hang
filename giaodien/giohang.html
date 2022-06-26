@@ -9,10 +9,11 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
             />
+        <link rel="stylesheet" href="../css/giohang.css">
         <link rel="stylesheet" href="../css/home.css">
         <link rel="stylesheet" href="../JavaScrip/slide.js">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <title>Trang chủ</title>
+        <title>Giỏ Hàng</title>
     </head>
 
     <body>
@@ -95,67 +96,111 @@
                 <li>
                     <a href="#" class="fa fa-paw"></a>
                 </li>
-
+                
                 <li>
-                    <a
-                        href="http://localhost/webtest/web_ban_hang/giaodien/giohang.html"
-                        class="fa fa-shopping-bag"></a>
-                </li> <li>
+                    <a href="http://localhost/webtest/web_ban_hang/giaodien/giohang.html" class="fa fa-shopping-bag"></a>
+                </li><li>
                     <a href="#" class="fa fa-user"> </a>
                 </li>
             </div>
 
         </header>
+        <!-- --------------------------giỏ hàng---------------- -->
 
-        <section id="slider">
-            <!-- Aspect ratio là tỉ lệ khung hình của 1 element, 
-            là mối quan hệ giữa chiều rộng và chiều cao của element đó. 
-            Trong thiết kế web được sử dụng để duy trì tỷ lệ cho các video để khi responsvie tránh tình trạng video đó bị crop.
-             Có 2 tỷ lệ phổ biến hiện nay đó là 4:3 và 16:9. -->
-            <div class="aspect-ratio-169">
-
-                <img src="../image/slide2.jpg" alt="">
-                <img src="../image/slide1.jpg" alt="">
-                <img src="../image/slide3.jpg" alt="">
-                <img src="../image/slide4.jpg" alt="">
-
-
-
+        <section class="cart">
+            <div class="container">
+                <div class="cart-top-wrap">
+                    <div class="cart-top row">
+                        <div class="cart-top-cart cart-top-item">
+                            <i class="fas fa-shopping-cart cart-top-item"></i>
+                        </div>
+                        <div class="cart-top-address cart-top-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="cart-top-payment cart-top-item">
+                            <i class="fas fa-money-check"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="dot-container">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+            <div class="container">
+                <div class="cart-content row">
+                    <div class="cart-content-left">
+                        <table>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Màu</th>
+                                <th>Size</th>
+                                <th>Số lượng </th>
+                                <th>Thành tiền</th>
+                                <th>chọn sản phẩm</th>
+                                <th>Xóa</th>
 
+
+                            </tr>
+                            <!-- -------đổ dữ liệu từ database ra----------- -->
+                            <tr>
+                                <td><img src="../image/đồ bộ.jpg" alt=""></td>
+                                <td><p>đồ bộ</p></td>
+                                <td><img src="../image/mau.jpg" alt="lấy màu"></td>
+                                <td>M</td>
+                                <td><input type="number" min="1" value="1"></td>
+                                <td><p>450.000<sup>đ</sup></p></td>
+                                <td><input type="checkbox" name="" value=""
+                                        style="width:50px ; height: 20px;"></td>
+                                <td><span>X</span></td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="cart-content-right">
+                        <table>
+                            <tr>
+                                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                            </tr>
+                            <tr>
+                                <td>Tổng sản phẩm:</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền hàng</td>
+                                <td><p>450.000<sup>đ</sup></p></td>
+                            </tr>
+                            <tr>
+                                <td>Tạm tính</td>
+                                <td><p style="color: black; font-weight: bold;">450.000<sup>đ</sup></p></td>
+                            </tr>
+                        </table>
+                        <div class="cart-content-right-text">
+                            <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có
+                                giá trị trên <span><p style="color:rgb(213, 20,
+                                        20) ; font-size: 20px ;">500.000<sup>đ</sup></p></span></p>
+                        </div>
+                        <div class="cart-content-right-button"> 
+                            <button><p>Thanh
+                                    Toán</p></button>
+                            <button> <p>Tiếp tục mua sắm</p></button>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- test thư viện Aos -->
-        <!-- <section class="body-conten">
-        <div class="row">
-            <div class="body-content-women-left">
-
-            </div>
-
-            <div class="body-content-men-right">
-                
-            </div>
-
-        </div>
-
-
-    </section> -->
-        <section class="app-container">
-            <p>Tải ứng dụng</p>
-            <div class="app-google">
-                <img src="../image/appStore.png" alt="">
-                <img src="../image/appChplay.png" alt="">
-            </div>
 
 
 
 
-        </section>
+
+
+
+
 
         <!------------------------------- footer ------------------------------>
         <footer>
@@ -207,7 +252,6 @@
             </div>
         </footer>
     </body>
-
     <script src="scrips.js"></script>
 
     <script
@@ -223,44 +267,4 @@
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-    AOS.init();
-</script>
-    <script>
-    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-    const imgContainer = document.querySelector('.aspect-ratio-169')
-
-    const dotItem = document.querySelectorAll(".dot")
-    let imgNumber = imgPosition.length
-    index = 0
-        // console.log(imgPosition)
-    imgPosition.forEach(function(image, index) {
-        image.style.left = index * 100 + "%"
-        dotItem[index].addEventListener("click", function() {
-            slider(index)
-
-        })
-    })
-
-    function imgSlide() {
-        index++;
-        console.log(index)
-        if (index >= imgNumber) {
-            index = 0
-        }
-
-        slider(index)
-
-    }
-
-    function slider(index) {
-        imgContainer.style.left = "-" + index * 100 + "%"
-        const dotActive = document.querySelector(".active")
-        dotActive.classList.remove('active')
-        dotItem[index].classList.add("active")
-
-    }
-    setInterval(imgSlide, 3000)
-</script>
 </html>
