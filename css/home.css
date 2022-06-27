@@ -96,6 +96,8 @@ header:hover {
     font-weight: bold;
     display: block;
     line-height: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -111,6 +113,11 @@ header:hover {
 .other li {
     padding: 10px 12px;
 }
+.other li a{
+    color: #000;
+}
+
+
 
 .other li:first-child {
     position: relative;
@@ -134,7 +141,7 @@ header:hover {
 
 #slider {
     padding-bottom: 30px;
-    border-bottom: 2px solid #000;
+    /* border-bottom: 2px solid #000; */
     overflow: hidden;
  
 }
@@ -168,16 +175,18 @@ header:hover {
 }
 
 .dot {
-    width: 18px;
-    height: 18px;
-    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #dddddd;
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
+    transition: opa;
 }
 
 .dot.active {
-    background-color: #333;
+    background-color: #000;
 }
 
 
@@ -218,17 +227,122 @@ header:hover {
 
 
 /* ---------------------------body content--------------------- */
-        .row{
-            display: flex;
-        }
-        .body-conten-woment-left{
-            width: 50%;
-            background: #333;
+.body-conten-wrap  {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+   
 
+}
+.body-content-women-left{
+    width: 46%;
+    margin-left: 3%;
+    margin-right: 1%;
+   
+}
+.body-content-men-right{
+    width: 46%;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+.body-content-women-left-top{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.body-content-women-left-top p{
+    color: #ccc;
+}
+.body-content-women-left-content img{
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.body-content-men-right-top{
+    font-size: 16px;
+    font-weight: bold;
+}
+.body-content-men-right-top p{
+    color: #ccc;
+}
+.body-content-men-right-content img{
+    width: 100%;
+    height: 550px;
+    justify-items: center;
+}
+/* -----------------------section-content-relative--------------------- */
+.section-content-relative{
+    background: #ddd;
+    margin: 10px 3%;
+}
+.align-items-start{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.col-content-item img{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+}
+.col-content-item span p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.col-content-item p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------section-content-relative---------------- */
+
+/* -----------------------------section quảng cáo---- */
+
+        .wrap{
+            display: flex;
+            width: 100%;
+            padding-top: 20px;
+            
         }
-        .body-conten-ment-right{
-            background: #000;
+        .left{
+        width: 50%;
         }
+        .right{
+            width: 50%;
+        }
+        .content-qn-left img{
+            width: 100%;
+
+            height: 500px;
+        }
+        .content-qn-right img{
+            width: 100%;
+            height: 500px;
+        }
+    
+
+/* ---------------quảng cáo---- */
 /* ------------------------footer------------- */
 
 #foster {
