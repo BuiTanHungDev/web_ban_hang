@@ -1,0 +1,345 @@
+.delivery{
+    padding: 120px 70px;
+}
+.delivery-top-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delivery-top{
+    width: 70%;
+    height: 2px;
+    justify-content: space-between;
+    margin: 50px 0 100px;
+    align-items: center;
+    background-color: #dddddd;
+}
+.delivery-top-item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
+    align-items: center; 
+    justify-content: center;
+  
+}
+.delivery-top-item i{
+    color:  #dddddd;
+}
+.delivery-top-cart{
+    border: 1px solid #FF3300;
+}
+.delivery-top-cart i{
+    color: #FF3300;
+}
+
+.delivery-top-address{
+    border: 1px solid #FF3300;
+}
+.delivery-top-address i{
+    color: #FF3300;
+}
+.delivery-content-left{
+    width: 70%;
+    padding-right: 30px;
+}
+.delivery-content-left >p{
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 30px;
+   color: #221f20;
+   margin-bottom: 18px;
+    
+}
+.delivery-content-left-user{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.delivery-content-left-user-dangnhap button{
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+font-weight: 500;
+border-radius: 12px 0;
+transition: all 0.3s;
+}
+.delivery-content-left-user-dangnhap button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.delivery-content-left-user-dangki{
+    margin-left:20px;
+}
+.delivery-content-left-user-dangki button{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+  font-weight: 500;
+  border-radius: 12px 0;
+  transition: all 0.3s;
+}
+.delivery-content-left-user-dangki button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.delivey-content-left-input-top{
+    justify-content: space-between;
+}
+.delivey-content-left-input-top-item{
+    width: calc(50% - 12px);
+    padding: 5px 3px;
+    margin-bottom: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.delivey-content-left-input-top-item input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding-left: 6px;
+}
+.delivey-content-left-input-bottom input{
+    width: 100%;
+    height: 35px;
+    padding-left: 6px;
+    border: 1px solid #dddddd;
+}
+.delivey-content-left-button  {
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.delivey-content-left-button p{
+    font-family: var(--main-text-font);
+    display: inline-block;
+    font-size: 13px;
+}
+.delivey-content-left-button button{
+    height: 35px;
+    
+    color: black;
+    background: #fff;
+    border: 2px solid #000;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+}
+.delivey-content-left-button button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+.delivery-content-right{
+    width: 30%;
+    height: auto;
+   
+    padding: 22px;
+}
+.view-bg{
+    padding: 22px;
+    background: rgba(247, 248, 249, 0.5);
+}
+
+.delivery-content-right table{
+    border-bottom:1px solid #dddddd;
+    width: 100%;
+    font-family: var(--main-text-font);
+    font-size: 15px;
+   text-align: center;
+  
+   
+
+}
+.delivery-content-right table tr th:first-child{
+    text-align: left;
+}
+.delivery-content-right table tr th{
+    /* border-bottom: 2px solid #ddd;
+    padding-bottom: 10px; */
+    padding-left: 0px;
+}
+.delivery-content-right table tr th:last-child{
+    text-align: right;
+}
+.delivery-content-right table tr td{
+    padding: 6px 0;
+}
+.delivery-content-right table tr td:first-child{
+    text-align: left;
+}
+.delivery-content-right table tr td:last-child{
+
+    text-align: right;
+}
+
+.voucher-form-text{
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.voucher-form{
+    /* background: rgba(247, 248, 249, 0.5); */
+}
+
+.voucher-form-text .active{
+   
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    color: #3e3e3f;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+.voucher-form-text h4{
+    flex: 0 0 auto;
+    width: auto;
+    font-weight: 600;
+    color: #939598;
+    font-size: 16px;
+    line-height: 24px;
+    
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.voucher-form-text span{
+    margin: 0 32px;
+    background-color: #939598;
+    display: block;
+  flex: 0 0 1px;
+  max-width: 1px;
+  width: 1px;
+  height: 20px; 
+}
+.voucher-code{
+    padding: 5px 5px;
+}
+.voucher-code >input {
+    width: 75%;
+    height: 40px;
+   margin-right: 5px;
+   border-radius:4px ;
+   border: 1px solid #e7e8e9;
+    padding-left: 10px;
+}
+.voucher-code >button{
+    height: 40px;
+    width: 25%;
+    border: 1px solid #6C6D70;
+    background-color: #fff;
+    border-radius: 10px 0;
+    
+  
+}
+.voucher-code >button >p{
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: 500;
+}
+.voucher-code-nv{
+    padding: 5px 5px;
+}
+.voucher-code-nv input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e7e8e9;
+    border-radius: 4px;
+    padding-left: 10px;
+    
+}
+.voucher-form-bottom{
+    padding: 20px 0;
+    width: 100%;
+}
+.voucher-form-bottom button{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px 0;
+    transition: all 0.3s;
+    
+}
+.voucher-form-bottom button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* ------------Phương thức thanh toán-------- */
+.delivey-content-bottom-ppthanhtoan-top{
+    padding: 30px 0px;
+}
+.check-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221f20;
+    margin-bottom: 18px;
+}
+.delivey-content-bottom-ppthanhtoan-bottom{
+    padding: 25px 25px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dddddd;
+    border-radius: 50px 0;
+}
+.delivey-content-bottom-ppthanhtoan-bottom >p{
+    padding: 10px 0; 
+    margin: 0 0 32px;
+    color: #6C6D70;
+}
+.ppthanhtoan{
+   
+   
+   
+
+    
+    
+}
+.pp{
+    height: 50px;
+  
+    align-items: center;
+    
+}
+.pp span{
+    padding-left: 2px;
+}
+.pp span >p{
+    color: #6C6D70;
+}
+.pp-text >p{
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #6C6D70;
+    padding:0 0 20px 10px ;
+}
+/* --------button hiện thị sản phẩm-----/ */
+.btn-show{
+    height: 100px;
+    
+    padding-top: 50px;
+}

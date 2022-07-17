@@ -4,10 +4,14 @@
 
 
 .cart-top-wrap {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
+   
 }
+/* .row{
+    display: flex;
+} */
 
 .cart-top {
     width: 70%;
